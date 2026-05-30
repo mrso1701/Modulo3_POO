@@ -45,6 +45,15 @@ public class PruebasTaller14 {
         miBicicleta.mover();
         
         System.out.println("================================");
+        
+        
+        // Referencia de clase base, instancia de clase derivada
+        Animal miMascota = new Perro();
+        
+        miMascota.hacerSonido(); // Esto funciona perfecto (Polimorfismo)
+        
+        // INTENTO INCORRECTO:
+        // miMascota.buscarPelota();
     }
     
 }
