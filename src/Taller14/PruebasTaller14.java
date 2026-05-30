@@ -16,6 +16,20 @@ public class PruebasTaller14 {
         miRectangulo.calcularArea();
         
         System.out.println("====================================");
+        
+        // Aplicacion de polimorfismo: Referencia padre, instancia hija
+        Persona personaGenerica = new Persona();
+        Persona miEstudiante = new Estudiante();
+        Persona miProfesor = new Profesor();
+        
+        System.out.println("=== Presentaciones ===");
+        
+        // Invocacion polimorfica del metodo presentarse()
+        personaGenerica.presentarse();
+        miEstudiante.presentarse();
+        miProfesor.presentarse();
+        
+        System.out.println("======================");
     }
     
 }
