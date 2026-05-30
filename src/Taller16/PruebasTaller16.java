@@ -38,6 +38,29 @@ public class PruebasTaller16 {
         reporteExcel.exportar();
         
         System.out.println("============================================");
+        
+        
+        String notificacion = "Tu pago ha sido procesado con exito.";
+        
+        System.out.println("=== SISTEMA DE MENSAJERIA ===");
+        
+        // El sistema original funciona usando la clase base
+        Mensajero canalPrincipal = new Mensajero();
+        canalPrincipal.enviarMensaje(notificacion);
+        
+        System.out.println("-----------------------------");
+        
+        // El sistema extendido funciona usando la clase hija SMS
+        Mensajero canalSecundario = new MensajeroSMS();
+        canalSecundario.enviarMensaje(notificacion);
+        
+        System.out.println("-----------------------------");
+        
+        // El sistema extendido funciona usando la clase hija Push
+        Mensajero canalTerciario = new MensajeroPush();
+        canalTerciario.enviarMensaje(notificacion);
+        
+        System.out.println("=============================");
     }
     
 }
