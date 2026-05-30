@@ -11,8 +11,8 @@ public class PruebasTaller13 {
         System.out.println("=== Cálculo de Áreas ===");
         
         // Java sabe dinámicamente cuál método ejecutar según el objeto real
-        System.out.println("El área del rectángulo es: " + miRectangulo.calcularArea());
-        System.out.println("El área del triángulo es: " + miTriangulo.calcularArea());
+        System.out.println("El area del rectangulo es: " + miRectangulo.calcularArea());
+        System.out.println("El area del triangulo es: " + miTriangulo.calcularArea());
         
         System.out.println("========================");
     }
