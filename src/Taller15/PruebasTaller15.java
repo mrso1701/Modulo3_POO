@@ -26,6 +26,27 @@ public class PruebasTaller15 {
         // 3. Usamos el servicio de impresion para generar la etiqueta
         EtiquetadorProducto etiquetador = new EtiquetadorProducto();
         etiquetador.generarEtiqueta(miProducto, precioVenta);
+        
+        System.out.println("\n===========================================\n");
+         
+         
+        // 1. Creamos el objeto usuario
+        Usuario miUsuario = new Usuario("dev_admin", "Secreta1234");
+        
+        // 2. Usamos el servicio especializado en validacion
+        ServicioValidacion validador = new ServicioValidacion();
+        boolean esValido = validador.validarDatos(miUsuario);
+        
+        // 3. Si la informacion es valida, usamos el servicio de autenticacion
+        if (esValido) {
+            ServicioAuntenticacion autenticador = new ServicioAuntenticacion();
+            
+            System.out.println("\n--- Simulando intento fallido ---");
+            autenticador.iniciarSesion(miUsuario, "dev_admin", "claveMala");
+            
+            System.out.println("\n--- Simulando intento exitoso ---");
+            autenticador.iniciarSesion(miUsuario, "dev_admin", "Secreta1234");
+        }
     }
     
 }
