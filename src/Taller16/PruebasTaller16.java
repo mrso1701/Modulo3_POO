@@ -15,6 +15,25 @@ public class PruebasTaller16 {
         Descuento cuponEspecial = new DescuentoFijo(15.0);
         double precioConFijo = cuponEspecial.aplicarDescuento(precioCamisa);
         System.out.println("Precio con descuento fijo de $15: $" + precioConFijo);
+        
+        System.out.println("\n===============================================\n");
+        String texto = "Reporte de ventas anuales";
+        
+        System.out.println("=== Sistema de Exportacion de Documentos ===");
+        
+        // 1. Usando el sistema original (PDF)
+        Documento reportePdf = new DocumentoPDF(texto);
+        reportePdf.exportar();
+        
+        // 2. Usando la extension del sistema (Word)
+        Documento reporteWord = new DocumentoWord(texto);
+        reporteWord.exportar();
+        
+        // 3. Usando la extension del sistema (Excel)
+        Documento reporteExcel = new DocumentoExcel(texto);
+        reporteExcel.exportar();
+        
+        System.out.println("============================================");
     }
     
 }
