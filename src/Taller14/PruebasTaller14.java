@@ -30,6 +30,21 @@ public class PruebasTaller14 {
         miProfesor.presentarse();
         
         System.out.println("======================");
+        
+        
+        // Uso de referencias de la clase padre para instanciar objetos hijos
+        Vehiculo vehiculoGenerico = new Vehiculo();
+        Vehiculo miCoche = new Coche();
+        Vehiculo miBicicleta = new Bicicleta();
+        
+        System.out.println("=== Simulacion de Movimiento ===");
+        
+        // Invocacion polimorfica del metodo mover()
+        vehiculoGenerico.mover();
+        miCoche.mover();
+        miBicicleta.mover();
+        
+        System.out.println("================================");
     }
     
 }
