@@ -17,6 +17,10 @@ public class PruebasTaller16 {
         System.out.println("Precio con descuento fijo de $15: $" + precioConFijo);
         
         System.out.println("\n===============================================\n");
+        
+        
+        
+        
         String texto = "Reporte de ventas anuales";
         
         System.out.println("=== Sistema de Exportacion de Documentos ===");
