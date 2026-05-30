@@ -15,6 +15,17 @@ public class PruebasTaller13 {
         System.out.println("El area del triangulo es: " + miTriangulo.calcularArea());
         
         System.out.println("========================");
+        
+        // Instanciamos el objeto Pato
+        Pato miPato = new Pato();
+        
+        System.out.println("=== Demostracion de Herencia Multiple ===");
+        
+        // Ejecutamos los metodos provenientes de diferentes interfaces
+        miPato.volar();
+        miPato.nadar();
+        
+        System.out.println("=========================================");
     }
     
 }
