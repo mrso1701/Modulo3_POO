@@ -12,7 +12,7 @@ public class PruebaMantenimiento {
         // conserje.reparar(); // ¡Error de compilación! El conserje no tiene esta habilidad, lo cual es correcto.
 
         // 2. Tarea exclusivamente de reparación
-        System.out.println("\n--- Asignando tarea al Técnico ---");
+        System.out.println("\n--- Asignando tarea al Tecnico ---");
         Reparable tecnico = new TecnicoReparacion();
         tecnico.reparar();
 
